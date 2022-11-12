@@ -37,15 +37,15 @@ fs.readFile("home.html", (err, home) => {
     response.writeHeader(200, { "Content-Type": "text/html" });
     switch (url) {
       case "/project":
-        response.write(projectContent);
+        response.write(project_Content);
         response.end();
         break;
       case "/registration":
-        response.write(registrationContent);
+        response.write(registration_Content);
         response.end();
         break;
       default:
-        response.write(homeContent);
+        response.write(home_Content);
         response.end();
         break;
     }
